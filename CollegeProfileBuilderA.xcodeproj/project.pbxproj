@@ -14,6 +14,7 @@
 		85CB06E01D469E3100D3C3B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CB06DE1D469E3100D3C3B7 /* LaunchScreen.storyboard */; };
 		85CB06EB1D469E3100D3C3B7 /* CollegeProfileBuilderATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CB06EA1D469E3100D3C3B7 /* CollegeProfileBuilderATests.swift */; };
 		85CB06F61D469E3100D3C3B7 /* CollegeProfileBuilderAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CB06F51D469E3100D3C3B7 /* CollegeProfileBuilderAUITests.swift */; };
+		85CB07041D46C07100D3C3B7 /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CB07031D46C07100D3C3B7 /* College.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		85CB06F11D469E3100D3C3B7 /* CollegeProfileBuilderAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegeProfileBuilderAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CB06F51D469E3100D3C3B7 /* CollegeProfileBuilderAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeProfileBuilderAUITests.swift; sourceTree = "<group>"; };
 		85CB06F71D469E3100D3C3B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85CB07031D46C07100D3C3B7 /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				85CB06D51D469E3100D3C3B7 /* AppDelegate.swift */,
+				85CB07031D46C07100D3C3B7 /* College.swift */,
 				85CB06D71D469E3100D3C3B7 /* ViewController.swift */,
 				85CB06D91D469E3100D3C3B7 /* Main.storyboard */,
 				85CB06DC1D469E3100D3C3B7 /* Assets.xcassets */,
@@ -258,6 +261,7 @@
 			files = (
 				85CB06D81D469E3100D3C3B7 /* ViewController.swift in Sources */,
 				85CB06D61D469E3100D3C3B7 /* AppDelegate.swift in Sources */,
+				85CB07041D46C07100D3C3B7 /* College.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
