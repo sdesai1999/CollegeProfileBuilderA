@@ -54,7 +54,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="de8-X7-sCq" secondAttribute="bottom" id="SbR-FC-rkn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PMi-uh-qGr"/>
+                    <navigationItem key="navigationItem" id="PMi-uh-qGr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="04B-GI-gWo">
+                            <connections>
+                                <action selector="onTappedPlusButton:" destination="BYZ-38-t0r" id="fBh-4X-jdD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="de8-X7-sCq" id="uZC-qm-tQB"/>
                     </connections>
