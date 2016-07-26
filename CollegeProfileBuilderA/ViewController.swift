@@ -11,10 +11,12 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var editButton: UIBarButtonItem!
     var colleges : [College] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        editButton.tag = 0
         colleges.append(College(name: "UW Madison", location: "Madison, WI", enrollment: 43193, image: UIImage(named: "madisonCollege")!))
         colleges.append(College(name: "Northwestern", location: "Evanston, IL", enrollment: 20336, image: UIImage(named: "northwesternCollege")!))
         colleges.append(College(name: "Case Western Reserve", location: "Cleveland, OH", enrollment: 11771, image: UIImage(named: "caseCollege")!))
@@ -37,6 +39,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        let college = colleges[sourceIndexPath.row]
+        colleges.removeAtIndex(sourceIndexPath.row)
+        colleges.insert(college, atIndex: destinationIndexPath.row)
+    }
+    
     @IBAction func onTappedPlusButton(sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Add College", message: nil, preferredStyle: .Alert)
         alert.addTextFieldWithConfigurationHandler { (textField) in
@@ -52,5 +64,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)
     }
+    @IBAction func onTappedEditButton(sender: UIBarButtonItem) {
+        if sender.tag == 0{
+            tableView.editing = true
+            sender.tag = 1
+        }
+        else{
+            tableView.editing = false
+            sender.tag = 0
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
