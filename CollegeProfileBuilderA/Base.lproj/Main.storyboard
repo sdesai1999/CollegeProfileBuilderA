@@ -38,6 +38,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pey-gV-LEU" kind="show" id="ywW-aq-uvY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -116,12 +119,6 @@
                                     <action selector="onTappedSaveButton:" destination="pey-gV-LEU" eventType="touchUpInside" id="uW4-M5-e2B"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICG-MK-fTG">
-                                <rect key="frame" x="279" y="427" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.0023150858697955634" green="1" blue="0.0095355935429028982" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -137,7 +134,6 @@
                         <outlet property="enrollmentTextField" destination="IeI-Nu-KQt" id="lsA-b3-Ner"/>
                         <outlet property="imageView" destination="e2d-I2-dME" id="vaH-VY-83Q"/>
                         <outlet property="locationTextField" destination="w6e-Ah-h5r" id="fxv-iP-ass"/>
-                        <outlet property="savedLabel" destination="ICG-MK-fTG" id="Ca9-HL-qzC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tpK-XR-DbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
